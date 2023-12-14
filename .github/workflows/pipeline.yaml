@@ -132,10 +132,10 @@ jobs:
       #       --region ${TESTING_REGION} \
       #       --output-template-file packaged-testing.yaml
 
-      - uses: actions/upload-artifact@v3
-        with:
-          name: packaged-testing.yaml
-          path: packaged-testing.yaml
+      # - uses: actions/upload-artifact@v3
+      #   with:
+      #     name: packaged-testing.yaml
+      #     path: packaged-testing.yaml
 
       - name: Assume the prod pipeline user role
         uses: aws-actions/configure-aws-credentials@v1-node16
